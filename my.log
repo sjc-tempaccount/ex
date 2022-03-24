@@ -1,0 +1,22 @@
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Ã˜resund and MalmÃ¶
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+DEBUG:root:A debug message
+INFO:root:For info
+WARNING:root:WARNING
+ERROR:root:Errors
+DEBUG:root:A debug message
+INFO:root:For info
+WARNING:root:WARNING
+ERROR:root:Errors
+DEBUG:root:A debug message
+INFO:root:For info
+WARNING:root:WARNING
+ERROR:root:Errors
+DEBUG:parso.cache:pickle loaded: C:\Users\sjcex\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\2and3\builtins.pyi
+DEBUG:parso.cache:pickle loaded: C:\Users\sjcex\anaconda3\lib\site-packages\jedi\third_party\typeshed\stdlib\3\sys.pyi
