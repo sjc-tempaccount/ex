@@ -1,0 +1,5 @@
+Look at the latest packaging tutorial from https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+and follow the steps with your own program (or use their example)
+
+till 9:40

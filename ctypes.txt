@@ -1,0 +1,45 @@
+# Simple case, the c function takes and returns an integer
+
+#include <stdio.h>
+
+int square(int i) {
+	return i * i;
+}
+
+Make a library file
+cc -fPIC -shared -o my_function.so my_function.c
+
+Call from Python
+
+import ctypes
+so_file = "./my_function.so"
+my_function = ctypes.CDLL(so_file)
+print(type(my_function))
+print(my_function.square(10))
+
+Working OK with int ....
+
+# Add a function that does floats
+float square(float i) {
+	return i * i;
+}
+
+Traceback (most recent call last):
+  File "test.py", line 8, in <module>
+    print(my_fns.square_f(1.1))
+ctypes.ArgumentError: argument 1: <class 'TypeError'>: Don't know how to convert parameter 1
+
+# need to use ctypes to convert arguments and return value
+my_fns.square_f.argtypes = [ctypes.c_float]
+
+# no error, but wrong answer!
+# also we need to annotate the return type
+
+libc.atof.restype = ctypes.c_double
+
+Notes
+http://www.dalkescientific.com/writings/NBN/ctypes.html
+https://www.journaldev.com/31907/calling-c-functions-from-python (just int)
+
+
+

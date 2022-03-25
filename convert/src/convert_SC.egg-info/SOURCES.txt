@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/convert_SC.egg-info/PKG-INFO
+src/convert_SC.egg-info/SOURCES.txt
+src/convert_SC.egg-info/dependency_links.txt
+src/convert_SC.egg-info/top_level.txt
+src/packaging_eg/__init__.py
+src/packaging_eg/temp.py
